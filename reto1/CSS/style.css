@@ -1,0 +1,232 @@
+/* Style compartido */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background-color: white;
+}
+
+/* Style Perfil */
+.contenedor-principal {
+    display: flex;
+    max-width: 850px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+}
+
+.foto {
+    width: 200px;
+    height: 290px;
+    border-radius: 20px 0 0 0px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.contenedor-perfil {
+    flex: 1;
+    max-width: 1000px;
+    margin: auto;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    box-shadow:  5px 5px rgba(0, 0, 1, 0.493);
+    padding: 20px;
+}
+
+.nombre {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.info-perfil {
+    flex: 1;
+}
+
+.descripcion {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.detalle {
+    margin-top: 5px;
+    line-height: 1.2;
+    width: 100%;
+    border-spacing: 10px 5px; 
+}
+
+.detalle td:first-child {
+    padding-right: 20px;
+    width: 250px; 
+}
+
+.detalle td {
+    vertical-align: top;
+}
+
+.derecha {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.lenguajes {
+    font-weight: bold;
+}
+
+.email {
+    margin-top: 10px;
+}
+
+.correo-link:link {
+    color: orange;
+    text-decoration: none;
+}
+
+.correo-link:focus,
+.correo-link:visited,
+.correo-link:active {
+    color: red;
+}
+
+/* Style Index */
+header, section, footer {
+    padding: 25px;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #8cace4;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+header nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 0;
+    color: white;
+    padding: 15px 30px;
+    border-right: 3px solid rgb(255, 255, 255);
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:nth-child(2){
+    justify-content: center;
+}
+
+nav ul li:last-child {
+    border-right: none;
+    justify-content: right;
+}
+
+.titulo-nav {
+    font-size: 40px;
+    color: white;
+    white-space: nowrap;
+    align-items: baseline;
+}
+
+.titulo-nav small {
+    font-size: 20px;
+    position: relative;
+}
+
+.ano {
+    margin-right: 10px;
+}
+
+.busqueda {
+    display: flex;
+    border: none;
+    color: #8cace4;
+}
+
+.busqueda input {
+    color: #8cace4;
+    border: none;
+    width: 70px; 
+    padding: 12px;
+}
+
+.busqueda input[type="text"] {
+    padding: 12px;
+    margin-right: 5px;
+    width: 250px; 
+}
+
+
+.lista-estudiantes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.lista-estudiantes li {
+    text-align: center;
+    transition: all 0.3s ease;
+    color: #7ea6d5;
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    padding: 15px;
+    box-shadow: 2px 2px rgba(51, 51, 51, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+}
+
+.lista-estudiantes li img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.lista-estudiantes li p {
+    margin: 0;
+    padding: 10px 0 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.lista-estudiantes li:hover {
+    transform: rotate(3deg) scale(1.05);
+    background-color: #a0c3d7;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lista-estudiantes li:hover img {
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #8cace4;
+}
