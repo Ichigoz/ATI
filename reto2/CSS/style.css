@@ -269,6 +269,7 @@ nav ul {
     margin: 0;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -310,6 +311,7 @@ nav ul li:last-child {
     display: flex;
     border: none;
     color: #8cace4;
+    flex-wrap: wrap;
 }
 
 .busqueda input {
@@ -322,7 +324,51 @@ nav ul li:last-child {
 .busqueda input[type="text"] {
     padding: 12px;
     margin-right: 5px;
-    width: 250px; 
+    width: 150px; 
+}
+
+.foto-perfil-pequena {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .foto-perfil-grande {
+        display: none;
+    }
+    
+    .foto-perfil-pequena {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .foto-perfil-grande {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .foto-perfil-pequena {
+        display: none;
+    }
+}
+
+.lista-estudiantes li:hover .foto-perfil-grande,
+.lista-estudiantes li:hover .foto-perfil-pequena {
+    transform: scale(1.05);
+}
+
+.lista-estudiantes li:focus .foto-perfil-grande,
+.lista-estudiantes li:focus .foto-perfil-pequena {
+    transform: scale(1.05);
 }
 
 .lista-estudiantes {
@@ -346,13 +392,13 @@ nav ul li:last-child {
     flex-direction: column;
     align-items: center;
     height: 250px;
+    cursor: pointer;
 }
 
 .lista-estudiantes li img {
     width: 100%;
     height: 200px;
     object-fit: contain;
-    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -373,8 +419,142 @@ nav ul li:last-child {
     transform: scale(1.05);
 }
 
+.lista-estudiantes li:focus {
+    outline: none;
+    background-color: #a0c3d7;
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lista-estudiantes li:focus img {
+    transform: scale(1.05);
+}
+
 footer {
     text-align: center;
     padding: 5px;
     background-color: #8cace4;
+}
+
+/* 320px — 480px */
+@media (max-width: 480px) {
+    .titulo-nav {
+        font-size: 24px;
+    }
+
+    .busqueda input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .lista-estudiantes {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul li {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* 481px — 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .titulo-nav {
+        font-size: 28px;
+    }
+
+    .busqueda input[type="text"] {
+        width: 200px;
+    }
+
+    .lista-estudiantes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 769px — 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .lista-estudiantes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .titulo-nav {
+        font-size: 32px;
+    }
+}
+
+/* 1025px — 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .lista-estudiantes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .titulo-nav {
+        font-size: 36px;
+    }
+}
+
+/* Header responsive para móviles */
+@media (max-width: 932px) {
+    header {
+        padding: 10px 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 0;
+    }
+    
+    nav ul li {
+        padding: 8px 0;
+        border: none !important;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        flex: none;
+    }
+    
+    .titulo-nav {
+        font-size: 24px;
+        justify-content: center;
+        white-space: nowrap;
+        order: 1;
+        margin-bottom: 5px;
+    }
+    
+    nav ul li:nth-child(2) {
+        order: 2;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+    
+    nav ul li:last-child {
+        order: 3;
+        padding: 0;
+    }
+    
+    .busqueda-li {
+        order: 3;
+        width: 100%;
+    }
+    
+    .busqueda {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .busqueda input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+    }
+    
+    .busqueda input[type="submit"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
