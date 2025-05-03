@@ -1,0 +1,13 @@
+const perfil = {
+    "nombre": "Jorge Gavidia",  
+	"descripcion":"Soy estudiante de la licenciatura de Computación de la UCV. Me especializo en el área de Redes de comunicaciones, servidores y VoIp, trabajo en la empresa Gare Network Developed como analista de redes y sistemas. Combino mi tiempo libre con actividades de deportes extremo como la Escalada, Canyoning, adicionalmente practico el montañismo y excursionismo.",
+    "color": "Azul", 
+    "libro":["El Principito"], 
+    "musica":["En realidad es variado, no me límito a uno solo"], 
+    "video_juego":["Counter Strike"], 
+    "lenguajes":["C", "C++", "Java", "Haskell", "Prolog"],
+    "email":"jorgega99@hotmail.com",
+    "ci":"18836874",    
+    "genero":"masculino",
+    "fecha_nacimiento":"24/04/1989"
+}

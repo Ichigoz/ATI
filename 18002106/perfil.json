@@ -1,0 +1,13 @@
+const perfil = {	
+	"nombre":"Abelardo José Moreno Carballeda",
+	"descripcion":"Soy estudiante de computación en el último semestre de la carrera. Me interesa el área de Inteligencia de Negocios y actualmente trabajo en el Fondo de Valores Inmobiliarios.",
+	"color": "Verde",
+	"libro": ["The Hitchhiker's Guide to the Galaxy."],
+	"musica": ["Retro."],
+	"video_juego": ["Punch-Out","Dark Souls"],
+	"lenguajes": ["Java", "C", "C++", "Python", "SQL", "Haskell", "Prolog", "Ensamblador"],
+	"email":"abelardo.moreno@gmail.com",
+	"ci":"18002106",
+	"genero":"masculino",
+	"fecha_nacimiento":"19/12/1988"
+}

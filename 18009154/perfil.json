@@ -1,0 +1,13 @@
+const perfil = {	
+	"nombre":"Jimmy E. Espino B.",
+	"descripcion":"Soy estudiante de licenciatura de computación de la UCV. Trabajo en el departamento de servicio técnico de una compañía de ventas. Presto trabajo social en un centro juvenil en donde se trabaja con niñ@s de 8 a 17 años, el cual es llevado por la congregación salesiana.Tengo como hobbie el futbol, la animación y el trabajo con material de sonido.",
+	"color": "Azul",
+	"libro": ["Símbolo Perdido"],
+	"musica": ["Electrónica"],
+	"video_juego":["Assasin Creed"],
+	"lenguajes": ["Java","C", "HTML"],
+	"email":"jimmyespino415@gmail.com",
+	"ci":"18009154",
+	"genero":"Masculino",
+	"fecha_nacimiento":"28/12/1990"
+}

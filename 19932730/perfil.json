@@ -1,0 +1,13 @@
+const perfil = {
+   "nombre":"Yesenia del Carmen Gil Casique",
+   "descripcion": "Soy estudiante de la Facultad de Ciencias,trabaje hasta hace poco, en el area de BPM y BI, y actualmente me dedico a trabajar freelacer en la desarrollo de pagina web y community manager",
+	"color": "rosado",
+	"libro" : ["Actualmente leo la biblia"],
+	"musica" : ["balada"],
+	"video_juego": ["no tengo"],
+	"lenguajes":["c++","java","python"],
+	"email":"yesenia@gmail.com",
+	"ci": "9932730",
+    "genero":"femenino", 
+    "fecha_nacimiento":"13/09/1990"
+}

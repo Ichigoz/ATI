@@ -1,0 +1,14 @@
+const perfil = {
+	"nombre": "Darwin R. Guaimacuto N.",
+	"descripcion": "Soy estudiante de Licenciatura en Computación de la UCV, estoy interesado en el área de Big Data, Minería de Datos e Inteligencia de Negocios. Me gusta Jugar Videojuegos, Leer, Hacer Ejercicio, Estudiar, Aprender cosas nuevas, entre otras.",
+	"color": "Negro",
+	"libro": ["Me gustan varios"],
+	"serie": ["Breaking Bad"],
+	"musica": ["Rock"],
+	"video_juego": ["Super Mario", "The Legend of Zelda", "The Last of Us", "Gears of War", "RE", "Silent Hill", "entre otros"],
+	"lenguajes": ["C++", "HTML", "R", "Phyton", "Java", "PL/SQL"],
+	"email": "dguaima@gmail.com",
+	"ci": "18819509",
+	"genero": "Masculino",
+	"fecha_nacimiento": "31/03/1990"
+}

@@ -1,0 +1,13 @@
+const perfil = {
+	"nombre":"Jhonny Morales",
+	"descripcion":"Soy estudiante de Licenciatura en Computación en la UCV, mis áreas de interés en la carrera son Bases de Datos y Aplicaciones con la Tecnología Internet. Al mismo tiempo estoy estudiando Contabilidad y al culminar está estudiaré Diseño Gráfico.",
+	"color": "Turquesa",
+	"libro": ["La máquina del tiempo"],
+	"musica": ["Electrónica"],
+	"video_juego":["DOOM"],
+	"lenguajes":["Java","C++","Python"],
+	"email":"jhonw.109@gmail.com",
+	"ci":"19558625",
+	"genero":"masculino",
+	"fecha_nacimiento":"29/09/1991"
+}

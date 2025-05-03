@@ -1,0 +1,14 @@
+const perfil = {
+	"nombre": "Betty Torres",
+    "descripcion": "Ingeniero de Sistemas, experiencia en sistemas para recursos humanos, áreas contables, administrativas, industria de telecomunicaciones, de atención al cliente y electorales. Años de desempeño en planificación de proyectos, coordinación de equipos de desarrollo,  seguimiento con metodologías ágiles y puesta en producción de soluciones tecnológicas.",
+	"color": "Naranja y Negro",
+	"libro": "Ilusiones de Richard Bach",
+	"musica": "Romantica y Salsa",
+	"video_juego": ["Call of Duty","Minecraft"],
+	"lenguajes": ["PL/SQL", "Java", "JavaScript"],
+	"email": "bettytores@gmail.com",
+	"ci": "13852255",
+	"genero": "femenino",
+	"fecha_nacimiento": "17/11/1979",
+	"imagen": "13852255.png"
+}

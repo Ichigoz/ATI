@@ -1,0 +1,13 @@
+const perfil = {	
+	"nombre":"Ana Gabriela Marchena Urbina",
+	"descripcion":"Estudiante de la licenciatura en Computación de la UCV.",
+	"color": "Negro",
+	"libro": ["La historia del loco"],
+	"musica": ["Soft rock, Pop"],
+	"video_juego": ["Honkai Star Rail, Pokemon"],
+	"lenguajes": ["C++, Java, Python"],
+	"email":"anagabi0703@gmail.com",
+	"ci": "28309145",
+	"genero":"femenino",
+	"fecha_nacimiento":"07/03/2002"
+}

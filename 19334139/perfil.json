@@ -1,0 +1,13 @@
+const perfil = {
+    "nombre": "Adrian Montes de Oca",
+    "descripccion": "Soy bachiller y actualmente estudiante de la escuela de Computación de la UCV. Además, trabajo desde hace unos meses como desarrollador web para una empresa con la cual he logrado adquirir experiencia en el área. Por otro lado, estoy haciendo un curso para dominar el idioma ingles el cual estaré culminando próximamente, y un curso para el desarrollo de aplicaciones en Android.",
+    "color": "Verde Manzana",
+    "libro": ["El Principito"],
+    "musica": ["Varios"],
+    "video_juego": ["Counter Strike", "FIFA"],
+    "lenguajes": [ "C++","Java","Javascript", "PHP", "HTML","CSS","Bootstrap"],
+    "email": "adrian.a.montesdeoca.m@gmail.com",
+    "ci": "19334139",
+    "genero": "Masculino",
+    "fecha_nacimiento": "11/01/1989"
+}

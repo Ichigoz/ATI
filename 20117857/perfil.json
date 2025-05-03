@@ -1,0 +1,13 @@
+const perfil = {	
+	"nombre":"Angel Acosta",
+	"descripcion":"Soy estudiante de Licenciatura en Computación en la Universidad Central de Venezuela. Vivo en San Antonio de los Altos. Soy preparador de Matemáticas Discretas I.",
+	"color": "Azul",
+	"libro": ["El Nombre del Viento"],
+	"musica": ["Jazz"],
+	"video_juego": ["Super Smash Bros."],
+	"lenguajes": ["Java", "C", "C++", "Python"],
+	"email":"angelxob@hotmail.com",
+	"ci": "20117857",
+	"genero":"masculino",
+	"fecha_nacimiento":"28/05/1991"
+}

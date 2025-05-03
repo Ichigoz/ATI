@@ -1,0 +1,13 @@
+const perfil = {	
+	"nombre":"Felix Garcia",
+	"descripcion":"Estudiante de la escuela de computación de la Universidad Central de Venezuela. Preparador del laboratorio de Comunicación de Datos. Gocho de San Cristoche, criado toda mi vida en Caracas, nunca falta un buen avilazo.",
+	"color": "Azul",
+	"libro": ["Canción de hielo y Fuego"],
+	"musica": ["Rock y Pop (80's)"],
+	"video_juego": ["Rocket League", "Dota2", "Counter Strike Global Offensive"],
+	"lenguajes":  ["C","C++","Html","Phyton","Java","php"],
+	"email":"FG.SOS.STORE@gmail.com",
+	"ci":"18938455",
+	"genero":"masculino",
+	"fecha_nacimiento":"26/07/1989"
+}

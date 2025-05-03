@@ -1,0 +1,13 @@
+const perfil = {	
+	"nombre":"Hector Palomino",
+	"descripcion":"Soy estudiante de la Licenciatura en Computación de la UCV. Interesado en la Ciencia de Datos y en el desarrollo web. Me gusta leer,estudiar,hacer deporte,escuchar musica, compartir con amigos, la playa, etc.",
+	"color": "Azul",
+	"libro": ["Cien Años de Soledad"],
+	"musica": ["Cualquiera"],
+	"video_juego": ["Super Mario", "FIFA", "PES", "Resident Evil"],
+	"lenguajes":["Java", "C", "C++", "R","SQL"],
+	"email":"hectorjosepalomino@gmail.com",
+	"ci":"18487832",
+	"genero": "masculino",
+	"fecha_nacimiento":"28/04/1990"
+}

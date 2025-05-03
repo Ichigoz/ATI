@@ -1,0 +1,13 @@
+const perfil = {	
+	"nombre":"Karl Correa",
+	"descripcion":"Soy estudiante de Computación en la UCV. Me interesa el área de innovación tecnológica en el ámbito web. Trabajo en el área de educación a distancia dando soporte a los usuarios del Campus Virtual UCV.",
+	"color": "Verde",
+	"libro": ["Guardianes de la noche"],
+	"musica": ["Cualquiera a excepción del vallenato, cumbia y regueton"],
+	"video_juego": ["Final fantasy's series", "TES: Skyrim", "League of Legends", "Archeage"],
+	"lenguajes": ["java", "c/c++", "python"],
+	"email":"karl.correa.88@gmail.com",
+	"ci":"18110561",
+	"genero": "masculino",
+	"fecha_nacimiento":"23/04/1988"
+}

@@ -1,0 +1,13 @@
+const perfil = {
+"nombre":"Gabriel Restrepo",
+"descripcion": "Soy bachiller técnico medio en electrónica. Actualmente me encuentro en el 8º semestre de la licenciatura en computación en la gloriosa UNIVERSIDAD CENTRAL DE VENEZUELA. Me gusta el desarrollo web y las redes. Quiero aprender cada día más.",
+"color": "Gris",
+"libro": ["Harry Potter"],
+"musica": ["Todo menos Vallenato"],
+"video_juego":["Fifa"],
+"lenguajes":["C", "C++", "Java", "MySql", "Oracle"],
+"email":"gabo1gara@gmail.com",
+"ci":"19379860",
+"genero":"Masculino",
+"fecha_nacimiento":"25/05/1989"
+}

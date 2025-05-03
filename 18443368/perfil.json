@@ -1,0 +1,13 @@
+const perfil = {
+    "nombre": "Diego Branco",
+    "descripcion": "Soy un estudiante de computación de la facultad de Ciencias de la Universidad Central de Venezuela, y me planeo graduar con la mención \"Ingeniería de Software\".",
+    "color": "Verde",
+    "libro": ["La Isla Misteriosa, Julio Verne"],
+    "musica": ["Soundtracks", "Rock", "Metal"],
+    "video_juego": ["Final Fantasy", "Pokémon", "Shin Megami Tensei", "etc)"],
+    "lenguajes": ["C","C++","Python","Java"],
+    "email": "diegoh89@gmail.com",
+    "ci": "18443368",
+    "genero": "masculino",
+    "fecha_nacimiento": "14/06/1989"
+}

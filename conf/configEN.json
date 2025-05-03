@@ -1,0 +1,16 @@
+const config = {
+	"sitio": ["ITA","[UCV]","2024-1"],
+	"home": "Home",
+	"login": "Login",
+	"copyRight":"Copyright © 2024 Computer school - ITA. All rights reserved",
+	"nombre":"Name",
+	"descripcion":"",
+	"color":"My favorite color is",
+	"libro":"My favorite book is",
+	"musica":"My favorite music style",
+	"video_juego":"Favorite video games",
+	"lenguajes":"Languages learned",
+	"email":"please send me a email to [email], if you need to contact me",
+	"buscar": "Search",
+	"saludo": "Hi"
+}

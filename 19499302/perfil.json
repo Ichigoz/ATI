@@ -1,0 +1,14 @@
+const perfil = {
+	"nombre": "Katherine Colina",
+	"descripcion": "Soy estudiante del 7mo semestre de la Licenciatura en computación de la UCV. Me gusta el area de Bases de Datos y la Mineria de Datos por lo cual me interesa especializarme en ambas areas, aprendiendo cada dia algo nuevo y en este caso HTML. Apasionada por el senderismo,el excursionismo y las acampadas.",
+	"color": "Naranja",
+	"libro": ["Muerte en el Nilo"],
+	"musica": ["Rock de los 80"],
+	"video_juego": ["Need for Speed"],
+	"lenguajes":["C/C++","SQL","Java"],
+	"ci":"19499302",
+	"genero":"femenino",
+	"fecha_nacimiento":"28/11/1990",
+	"email":"kathymcolina@gmail.com"
+}
+

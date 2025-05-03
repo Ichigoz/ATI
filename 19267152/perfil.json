@@ -1,0 +1,13 @@
+const perfil = {
+	"nombre":"Zulay Pineda",
+	"descripcion":"Soy estudiante de la Licenciatura en Computación de las menciones de Inteligencia Artificial y Bases de Datos, practico los idiomas ingles y frances y en mi tiempo libre me gusta leer.",
+	"color": "morado",
+	"libro": ["Ogullo y Prejuicio"],
+	"musica": ["pop-rock"],
+	"videojuego": ["The sims y simcity"],
+	"lenguajes":["Java", "C++", "Javascript", "PHP"],
+	"email":"zulay.pineda.19@gmail.com",
+	"ci":"19267152",
+	"genero":"femenino",
+	"fecha_nacimiento":"16/01/1990"
+}
