@@ -1,5 +1,5 @@
-const config = {
-	"sitio": ["ATI","[UCV]","2024-1"],
+{
+	"sitio": ["ATI","[UCV]","2025-1"],
 	"home": "Inicio",
 	"login": "Entrar",
 	"copyRight":"Copyright © 2024 Escuela de computación - ATI. Todos los derechos reservados",

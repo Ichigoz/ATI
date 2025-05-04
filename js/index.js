@@ -1,39 +1,66 @@
 document.addEventListener('DOMContentLoaded', () => {
-    aplicarConfiguracion(config);
-    mostrarEstudiantes(perfiles);
+    fetch('conf/configES.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Error al cargar el JSON');
+            return response.json();
+        })
+        .then(config => {
+            renderizarConfig(config);
+            cargarEstudiantes();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.querySelector('.titulo-nav').textContent = "Error cargando configuración";
+        });
 });
 
-function aplicarConfiguracion(config) {
-    const año = document.querySelector('.ano small');
-    if (año) año.textContent = config.sitio[2];
+function renderizarConfig(config) {
+    const tituloNav = document.querySelector('.titulo-nav');
+    if (tituloNav) {
+        const mainText = tituloNav.querySelector('.main-text');
+        const ucvText = tituloNav.querySelector('.ucv');
+        const secondaryText = tituloNav.querySelector('.secondary-text');
+        
+        if (mainText && ucvText && secondaryText) {
+            mainText.textContent = config.sitio[0];
+            ucvText.textContent = config.sitio[1];
+            secondaryText.textContent = config.sitio[2];
+        }
+    }
 
-    const titulo = document.querySelector('.titulo-nav');
-    if (titulo) titulo.insertAdjacentText("afterbegin", `${config.sitio[0]} ${config.sitio[1]} `);
+    const saludoElement = document.querySelector('.Saludo');
+    if (saludoElement) {
+        saludoElement.textContent = config.saludo || "Bienvenido";
+    }
 
-    const saludo = document.querySelector('nav ul li:nth-child(2) strong');
-    if (saludo) saludo.textContent = config.saludo;
-
-    const input = document.querySelector('.busqueda input[type="text"]');
-    const boton = document.querySelector('.busqueda input[type="submit"]');
-    if (input) input.placeholder = config.nombre;
-    if (boton) boton.value = config.buscar;
-
-    const footer = document.querySelector('footer strong');
-    if (footer) footer.textContent = config.copyRight;
+    const textInput = document.querySelector('.busqueda .text-input');
+    const submitBtn = document.querySelector('.busqueda .submit-btn');
+    
+    if (textInput) textInput.placeholder = config.nombre || "Buscar...";
+    if (submitBtn) submitBtn.value = config.buscar || "Buscar";
+    
+    const copyright = document.querySelector('.copyright-text');
+    if (copyright) copyright.textContent = config.copyRight || "Derechos reservados";
 }
 
-function mostrarEstudiantes(perfiles) {
-    const lista = document.querySelector('.lista-estudiantes');
-    if (!lista) return;
-
-    perfiles.forEach(est => {
-        const li = document.createElement('li');
-        li.innerHTML = `
-            <figure>
-                <img src="img/${est.imagen}" alt="${est.nombre}">
-                <figcaption>${est.nombre}</figcaption>
-            </figure>
-        `;
-        lista.appendChild(li);
-    });
+function cargarEstudiantes() {
+    fetch('datos/index.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Error al cargar estudiantes');
+            return response.json();
+        })
+        .then(estudiantes => {
+            const lista = document.querySelector('.lista-estudiantes');
+            if (lista) {
+                estudiantes.forEach(est => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <img src="${est.imagen}" alt="${est.nombre}">
+                        <span>${est.nombre} (${est.ci})</span>
+                    `;
+                    lista.appendChild(li);
+                });
+            }
+        })
+        .catch(error => console.error('Error cargando estudiantes:', error));
 }

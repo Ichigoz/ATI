@@ -1,5 +1,5 @@
 const config = {
-	"sitio": ["ITA","[UCV]","2024-1"],
+	"sitio": ["ITA","[UCV]","2025-1"],
 	"home": "Home",
 	"login": "Login",
 	"copyRight":"Copyright © 2024 Computer school - ITA. All rights reserved",
