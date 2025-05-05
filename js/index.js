@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => { 
     const params = new URLSearchParams(window.location.search);
-    const lang = params.get('lang')?.toUpperCase() || 'ES';  // Si no hay lang, usa español
+    const lang = params.get('lang')?.toUpperCase() || 'ES';
 
     const configPath = `conf/config${lang}.json`;
 
