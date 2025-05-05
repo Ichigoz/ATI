@@ -84,12 +84,12 @@ body {
 
 .email {
     display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: flex-start;
+    grid-template-columns: max-content 1fr;
     gap: 6px;
-    overflow-wrap: break-word;
+    align-items: start;
     word-break: break-word;
-}  
+    overflow-wrap: break-word;
+}
 
 .correo-link:link {
     color: orange;
@@ -208,6 +208,13 @@ body {
     .nombre {
         font-size: 24px;
     }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
 }
 
 /* 1025px — 1200px */
@@ -218,6 +225,13 @@ body {
 
     .nombre {
         font-size: 26px;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
     }
 }
 
