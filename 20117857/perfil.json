@@ -1,4 +1,4 @@
-const perfil = {	
+{	
 	"nombre":"Angel Acosta",
 	"descripcion":"Soy estudiante de Licenciatura en Computación en la Universidad Central de Venezuela. Vivo en San Antonio de los Altos. Soy preparador de Matemáticas Discretas I.",
 	"color": "Azul",

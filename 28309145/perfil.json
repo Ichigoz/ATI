@@ -1,4 +1,4 @@
-const perfil = {	
+{	
 	"nombre":"Ana Gabriela Marchena Urbina",
 	"descripcion":"Estudiante de la licenciatura en Computación de la UCV.",
 	"color": "Negro",

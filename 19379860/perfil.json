@@ -1,4 +1,4 @@
-const perfil = {
+{
 "nombre":"Gabriel Restrepo",
 "descripcion": "Soy bachiller técnico medio en electrónica. Actualmente me encuentro en el 8º semestre de la licenciatura en computación en la gloriosa UNIVERSIDAD CENTRAL DE VENEZUELA. Me gusta el desarrollo web y las redes. Quiero aprender cada día más.",
 "color": "Gris",

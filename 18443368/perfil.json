@@ -1,4 +1,4 @@
-const perfil = {
+{
     "nombre": "Diego Branco",
     "descripcion": "Soy un estudiante de computación de la facultad de Ciencias de la Universidad Central de Venezuela, y me planeo graduar con la mención \"Ingeniería de Software\".",
     "color": "Verde",

@@ -1,4 +1,4 @@
-const perfil = {	
+{	
 	"nombre":"Hector Palomino",
 	"descripcion":"Soy estudiante de la Licenciatura en Computación de la UCV. Interesado en la Ciencia de Datos y en el desarrollo web. Me gusta leer,estudiar,hacer deporte,escuchar musica, compartir con amigos, la playa, etc.",
 	"color": "Azul",

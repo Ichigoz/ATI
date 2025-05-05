@@ -1,4 +1,4 @@
-const perfil = {	
+{	
 	"nombre":"Leopoldo Enrique Izquierdo Carias",
 	"descripcion":"Soy estudiante de computacion en la Universidad Central de Venezuela. Tengo inclinacion por la rama de computacion grafica, y espero adquirir los suficientes conocimientos de esa área para lograr emprender por mi cuenta desarrollando aplicaciones moviles que hagan uso del API grafico.",
 	"color": "Verde",

@@ -1,4 +1,4 @@
-const perfil = {
+{
 	"nombre":"Jhonny Morales",
 	"descripcion":"Soy estudiante de Licenciatura en Computación en la UCV, mis áreas de interés en la carrera son Bases de Datos y Aplicaciones con la Tecnología Internet. Al mismo tiempo estoy estudiando Contabilidad y al culminar está estudiaré Diseño Gráfico.",
 	"color": "Turquesa",

@@ -1,4 +1,4 @@
-const perfil = {	
+{	
 	"nombre":"Abelardo José Moreno Carballeda",
 	"descripcion":"Soy estudiante de computación en el último semestre de la carrera. Me interesa el área de Inteligencia de Negocios y actualmente trabajo en el Fondo de Valores Inmobiliarios.",
 	"color": "Verde",

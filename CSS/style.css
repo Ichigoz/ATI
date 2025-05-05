@@ -10,37 +10,25 @@ body {
 /* Style Perfil */
 .contenedor-principal {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    max-width: 850px;
+    align-items: stretch;
+    max-width: 950px;
     margin: 20px auto;
     gap: 10px;
     padding: 10px;
 }
 
 .foto {
+    border-radius: 20px 0px 0 0;
     width: 200px;
-    height: 288px;
-    border-radius: 20px 0 0 0;
-    object-fit: cover;
+    height: auto;
+    flex: none;
     background-size: cover;
     background-position: center;
 }
 
-@media (min-width: 769px) {
-    .foto {
-        background-image: url('../28309145/28309145Grande.jpg');
-    }
-}
-
-@media (max-width: 768px) {
-    .foto {
-        background-image: url('../28309145/28309145Pequena.jpg');
-    }
-}
-
 .contenedor-perfil {
-    flex: auto;
+    width: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     background-color: #fff;

@@ -1,4 +1,4 @@
-const config = {
+{
 	"sitio": ["ITA","[UCV]","2025-1"],
 	"home": "Home",
 	"login": "Login",
@@ -10,7 +10,7 @@ const config = {
 	"musica":"My favorite music style",
 	"video_juego":"Favorite video games",
 	"lenguajes":"Languages learned",
-	"email":"please send me a email to [email], if you need to contact me",
+	"email":"please, send me a email if you need to contact me:",
 	"buscar": "Search",
 	"saludo": "Hi"
 }

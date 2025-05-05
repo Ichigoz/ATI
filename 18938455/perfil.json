@@ -1,4 +1,4 @@
-const perfil = {	
+{	
 	"nombre":"Felix Garcia",
 	"descripcion":"Estudiante de la escuela de computación de la Universidad Central de Venezuela. Preparador del laboratorio de Comunicación de Datos. Gocho de San Cristoche, criado toda mi vida en Caracas, nunca falta un buen avilazo.",
 	"color": "Azul",

@@ -1,7 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('conf/configES.json')
+document.addEventListener('DOMContentLoaded', () => { 
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get('lang')?.toUpperCase() || 'ES';  // Si no hay lang, usa español
+
+    const configPath = `conf/config${lang}.json`;
+
+    fetch(configPath)
         .then(response => {
-            if (!response.ok) throw new Error('Error al cargar el JSON');
+            if (!response.ok) throw new Error('Error al cargar el archivo de configuración');
             return response.json();
         })
         .then(config => {
@@ -55,8 +60,8 @@ function cargarEstudiantes() {
                 estudiantes.forEach(est => {
                     const li = document.createElement('li');
                     li.innerHTML = `
-                        <img src="${est.imagen}" alt="${est.nombre}">
-                        <span>${est.nombre} (${est.ci})</span>
+                    <img src="${est.imagen}" alt="${est.nombre}" class="foto-perfil-grande">
+                    <p>${est.nombre}</p>
                     `;
                     lista.appendChild(li);
                 });

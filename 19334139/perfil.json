@@ -1,6 +1,6 @@
-const perfil = {
+{
     "nombre": "Adrian Montes de Oca",
-    "descripccion": "Soy bachiller y actualmente estudiante de la escuela de Computación de la UCV. Además, trabajo desde hace unos meses como desarrollador web para una empresa con la cual he logrado adquirir experiencia en el área. Por otro lado, estoy haciendo un curso para dominar el idioma ingles el cual estaré culminando próximamente, y un curso para el desarrollo de aplicaciones en Android.",
+    "descripcion":"Soy un estudiante de computación de la facultad de Ciencias de la Universidad Central de Venezuela, y me planeo graduar con la mención \"Ingeniería de Software\".",
     "color": "Verde Manzana",
     "libro": ["El Principito"],
     "musica": ["Varios"],

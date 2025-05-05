@@ -1,4 +1,4 @@
-const perfil = {	
+{	
 	"nombre":"María Paula Herrero",
 	"descripcion":"Soy licenciada en Computación de la UCV. Me desempeño en el área de ingeniería web y actualmente doy clases en la Escuela de Computación de la UCV. Además, desde el 2007 he venido desarrollando una segunda carrera como escritora e ilustradora. He participado en diversos talleres de escritura y actualmente estudio diseño gráfico en Prodiseño.",
 	"color": "Azul",
