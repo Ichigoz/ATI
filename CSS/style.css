@@ -424,6 +424,18 @@ footer {
     background-color: #8cace4;
 }
 
+.mensaje-no-resultados {
+    display: none;
+    font-size: 1.5em;
+    color: #8cace4;
+    text-align: center;
+    margin: 40px 20px;
+}
+
+section {
+    min-height: 80vh;
+}
+
 /* 320px — 480px */
 @media (max-width: 480px) {
     .titulo-nav {

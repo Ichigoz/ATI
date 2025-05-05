@@ -37,20 +37,26 @@ function cargarPerfil(ci, config) {
 
             const filas = document.querySelectorAll('.detalle tr');
             if (filas.length >= 5) {
-                filas[0].children[0].textContent = config.color;
-                filas[0].children[1].textContent = perfil.color;
+                filas[0].children[0].textContent = config.genero;
+                filas[0].children[1].textContent = perfil.genero;
 
-                filas[1].children[0].textContent = config.libro;
-                filas[1].children[1].textContent = perfil.libro.join(', ');
+                filas[1].children[0].textContent = config.fecha_nacimiento;
+                filas[1].children[1].textContent = perfil.fecha_nacimiento;
 
-                filas[2].children[0].textContent = config.musica;
-                filas[2].children[1].textContent = perfil.musica.join(', ');
+                filas[2].children[0].textContent = config.color;
+                filas[2].children[1].textContent = perfil.color;
 
-                filas[3].children[0].textContent = config.video_juego;
-                filas[3].children[1].textContent = perfil.video_juego.join(', ');
+                filas[3].children[0].textContent = config.libro;
+                filas[3].children[1].textContent = perfil.libro.join(', ');
 
-                filas[4].children[0].innerHTML = `<strong>${config.lenguajes}</strong>`;
-                filas[4].children[1].innerHTML = perfil.lenguajes.map(l => `<strong>${l}</strong>`).join(', ');
+                filas[4].children[0].textContent = config.musica;
+                filas[4].children[1].textContent = perfil.musica.join(', ');
+
+                filas[5].children[0].textContent = config.video_juego;
+                filas[5].children[1].textContent = perfil.video_juego.join(', ');
+
+                filas[6].children[0].innerHTML = `<strong>${config.lenguajes}</strong>`;
+                filas[6].children[1].innerHTML = perfil.lenguajes.map(l => `<strong>${l}</strong>`).join(', ');
             }
         })
         .catch(error => console.error('Error al mostrar perfil:', error));

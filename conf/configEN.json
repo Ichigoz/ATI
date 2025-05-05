@@ -5,12 +5,15 @@
 	"copyRight":"Copyright © 2024 Computer school - ITA. All rights reserved",
 	"nombre":"Name",
 	"descripcion":"",
-	"color":"My favorite color is",
-	"libro":"My favorite book is",
-	"musica":"My favorite music style",
-	"video_juego":"Favorite video games",
-	"lenguajes":"Languages learned",
-	"email":"please, send me a email if you need to contact me:",
+	"color":"My favorite color is:",
+	"libro":"My favorite book is:",
+	"musica":"My favorite music style:",
+	"video_juego":"Favorite video games:",
+	"lenguajes":"Languages learned:",
+	"email":"Please, send me a email if you need to contact me:",
 	"buscar": "Search",
-	"saludo": "Hi"
+	"saludo": "Hi",
+	"mensajeNoResultados": "There are no students who have in their name: ",
+	"genero": "Gender:",
+	"fecha_nacimiento": "Birthdate:"
 }

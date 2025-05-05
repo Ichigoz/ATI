@@ -5,12 +5,15 @@
 	"copyRight":"Copyright © 2024 Escola de informática - ATI. Todos os direitos reservados",
 	"nombre":"Nome",
 	"descripcion":"",
-	"color":"Minha cor favorita é",
-	"libro":"Meu livro favorito é",
-	"musica":"Meu estilo de música favorita",
-	"video_juego":"Jogos de vídeo favoritos",
-	"lenguajes":"Linguagems aprendidas",
+	"color":"Minha cor favorita é:",
+	"libro":"Meu livro favorito é:",
+	"musica":"Meu estilo de música favorita:",
+	"video_juego":"Jogos de vídeo favoritos:",
+	"lenguajes":"Linguagems aprendidas:",
 	"email":"Se precisar me contatar pode me escrever em:",
 	"buscar": "Procurar",
-	"saludo": "Olá"
+	"saludo": "Olá",
+	"mensajeNoResultados": "Não há alunos que tenham em seu nome: ",
+	"genero": "Género:",
+	"fecha_nacimiento": "Data de nascimento:"
 }
