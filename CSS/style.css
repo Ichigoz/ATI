@@ -89,7 +89,7 @@ body {
     gap: 6px;
     overflow-wrap: break-word;
     word-break: break-word;
-}
+}  
 
 .correo-link:link {
     color: orange;
@@ -205,11 +205,6 @@ body {
         max-width: 95%;
     }
 
-    .foto {
-        width: 180px;
-        height: 290px;
-    }
-
     .nombre {
         font-size: 24px;
     }
@@ -219,11 +214,6 @@ body {
 @media (min-width: 1025px) and (max-width: 1200px) {
     .contenedor-principal {
         max-width: 850px;
-    }
-
-    .foto {
-        width: 200px;
-        height: 290px;
     }
 
     .nombre {
