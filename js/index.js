@@ -67,11 +67,23 @@ document.addEventListener('DOMContentLoaded', () => {
         lista.innerHTML = '';
         listaEstudiantes.forEach(est => {
             const li = document.createElement('li');
-            li.innerHTML = `
+    
+            const link = document.createElement('a');
+            link.href = `perfil.html?ci=${est.ci}&lang=${lang}`;
+
+            link.innerHTML = `
                 <img src="${est.imagen}" alt="${est.nombre}">
-                <p>${est.nombre}</p>
-            `;
+                <p>${est.nombre}</p>`;
+    
+            li.appendChild(link);
             lista.appendChild(li);
+
+            li.innerHTML = `
+            <a href="perfil.html?ci=${est.ci}&lang=${lang}" 
+            style="text-decoration: none; color: inherit;">
+            <img src="${est.imagen}" alt="${est.nombre}">
+            <p>${est.nombre}</p>
+            </a>`;
         });
     }
 
