@@ -13,7 +13,7 @@
 	"email":"Si necesitan comunicarse conmigo pueden escribirme a:",
 	"buscar": "Buscar",
 	"saludo": "Hola",
-	"mensajeNoResultados": "No hay alumnos que tengan en su nombre: ",
+	"noResultados": "No hay alumnos que tengan en su nombre: ",
 	"genero": "Género:",
 	"fecha_nacimiento": "Fecha de nacimiento:"
 }

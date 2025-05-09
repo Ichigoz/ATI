@@ -13,7 +13,7 @@
 	"email":"Please, send me a email if you need to contact me:",
 	"buscar": "Search",
 	"saludo": "Hi",
-	"mensajeNoResultados": "There are no students who have in their name: ",
+	"noResultados": "There are no students who have in their name: ",
 	"genero": "Gender:",
 	"fecha_nacimiento": "Birthdate:"
 }

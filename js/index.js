@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const configPath = `conf/config${lang.toUpperCase()}.json`;
 
     let estudiantes = [];
-    let mensajeNoResultados = "No hay alumnos que tengan en su nombre: ";
+    let mensajeNoResultados;
 
     const searchInput = document.querySelector('.busqueda .text-input');
     const lista = document.querySelector('.lista-estudiantes');
