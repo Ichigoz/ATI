@@ -71,7 +71,7 @@ body {
     word-break: break-word;
 }
 
-.detalle td:first-child {
+.detalle-label {
     padding-right: 20px;
     width: 250px;
 }
@@ -142,9 +142,9 @@ body {
         flex-direction: column;
     }
 
-    .detalle td:first-child {
-        width: auto;
-        padding-right: 0;
+    .detalle-label {
+    width: auto;
+    padding-right: 0;
     }
 
     .email {
@@ -185,9 +185,9 @@ body {
         text-align: center;
     }
 
-    .detalle td:first-child {
-        width: auto;
-        padding-right: 15px;
+    .detalle-label {
+    width: auto;
+    padding-right: 0;
     }
 
     .email {

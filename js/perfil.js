@@ -1,63 +1,98 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const elementos = {
+        nombre: document.querySelector('.nombre'),
+        descripcion: document.querySelector('.descripcion'),
+        emailTexto: document.querySelector('.texto-email'),
+        emailLink: document.querySelector('.correo-link'),
+        foto: document.querySelector('.foto'),
+        filasDetalle: document.querySelectorAll('.detalle tr')
+    };
+
+    function mostrarCargando() {
+        elementos.nombre.textContent = 'Cargando perfil...';
+    }
+
+    function mostrarError(mensaje) {
+        elementos.nombre.textContent = 'Error';
+        elementos.descripcion.textContent = mensaje;
+    }
+
     const params = new URLSearchParams(window.location.search);
     const ci = params.get('ci');
     const lang = params.get('lang') || 'ES';
-
     const rutaConfig = `conf/config${lang.toUpperCase()}.json`;
 
-    fetch(rutaConfig)
-        .then(response => {
-            if (!response.ok) throw new Error('No se pudo cargar el archivo de configuración');
-            return response.json();
-        })
-        .then(config => {
-            if (!ci) throw new Error('No se proporcionó CI en la URL');
-            cargarPerfil(ci, config);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-});
+    if (!ci) {
+        mostrarError('No se proporcionó CI en la URL');
+        return;
+    }
 
-function cargarPerfil(ci, config) {
-    fetch(`${ci}/perfil.json`)
-        .then(response => {
+    mostrarCargando();
+    Promise.all([
+        fetch(rutaConfig).then(response => {
+            if (!response.ok) throw new Error('No se pudo cargar la configuración');
+            return response.json();
+        }),
+        fetch(`${ci}/perfil.json`).then(response => {
             if (!response.ok) throw new Error('No se pudo cargar el perfil');
             return response.json();
         })
-        .then(perfil => {
-            document.title = perfil.nombre;
-            document.querySelector('.nombre').textContent = perfil.nombre;
-            document.querySelector('.descripcion').textContent = perfil.descripcion;
+    ])
+    .then(([config, perfil]) => {
+        actualizarPerfil(config, perfil, ci);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        mostrarError(error.message);
+    });
 
-            document.querySelector('.email').innerHTML = `${config.email} 
-                <a href="mailto:${perfil.email}" class="correo-link">${perfil.email}</a>`;
+    function actualizarPerfil(config, perfil, ci) {
+        elementos.nombre.textContent = perfil.nombre;
+        document.title = perfil.nombre;
+        elementos.descripcion.textContent = perfil.descripcion;
 
-            document.querySelector('.foto').style.backgroundImage = `url('${ci}/${ci}.jpg')`;
+        elementos.emailTexto.textContent = config.email;
+        elementos.emailLink.href = `mailto:${perfil.email}`;
+        elementos.emailLink.textContent = perfil.email;
 
-            const filas = document.querySelectorAll('.detalle tr');
-            if (filas.length >= 5) {
-                filas[0].children[0].textContent = config.genero;
-                filas[0].children[1].textContent = perfil.genero;
+        const img = new Image();
+        img.src = `${ci}/${ci}.jpg`;
+        img.onload = () => {
+            elementos.foto.style.backgroundImage = `url('${ci}/${ci}.jpg')`;
+        };
+        img.onerror = () => {
+            console.warn('No se pudo cargar la imagen del perfil');
+        };
 
-                filas[1].children[0].textContent = config.fecha_nacimiento;
-                filas[1].children[1].textContent = perfil.fecha_nacimiento;
+        if (elementos.filasDetalle.length >= 7) {
+            const detalles = [
+                { label: config.genero, value: perfil.genero },
+                { label: config.fecha_nacimiento, value: perfil.fecha_nacimiento },
+                { label: config.color, value: perfil.color },
+                { label: config.libro, value: perfil.libro.join(', ') },
+                { label: config.musica, value: perfil.musica.join(', ') },
+                { label: config.video_juego, value: perfil.video_juego.join(', ') },
+                { label: config.lenguajes, value: perfil.lenguajes.join(', ') }
+            ];
 
-                filas[2].children[0].textContent = config.color;
-                filas[2].children[1].textContent = perfil.color;
+            detalles.forEach((detalle, index) => {
+                const fila = elementos.filasDetalle[index];
+                if (fila) {
+                    const labelCell = fila.querySelector('.detalle-label') || fila.cells[0];
+                    if (labelCell) {
+                        labelCell.textContent = detalle.label;
+                    }
 
-                filas[3].children[0].textContent = config.libro;
-                filas[3].children[1].textContent = perfil.libro.join(', ');
-
-                filas[4].children[0].textContent = config.musica;
-                filas[4].children[1].textContent = perfil.musica.join(', ');
-
-                filas[5].children[0].textContent = config.video_juego;
-                filas[5].children[1].textContent = perfil.video_juego.join(', ');
-
-                filas[6].children[0].innerHTML = `<strong>${config.lenguajes}</strong>`;
-                filas[6].children[1].innerHTML = perfil.lenguajes.map(l => `<strong>${l}</strong>`).join(', ');
-            }
-        })
-        .catch(error => console.error('Error al mostrar perfil:', error));
-}
+                    const valueCell = fila.cells[1];
+                    if (valueCell) {
+                        if (index === 6) {
+                            valueCell.innerHTML = `<strong>${detalle.value}</strong>`;
+                        } else {
+                            valueCell.textContent = detalle.value;
+                        }
+                    }
+                }
+            });
+        }
+    }
+});
