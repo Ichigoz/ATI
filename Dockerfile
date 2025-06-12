@@ -30,9 +30,11 @@ COPY 28309145/ ./28309145/
 EXPOSE 8082
 CMD ["python", "./app.py"]
 
-# Comandos necesarios en el shell para implementar el contenedor: 
+# Comandos necesarios en el shell para implementar el contenedor:
+# primero entraremos en la carpeta donde se encuentra nuestro proyecto para ejecutar los siguientes comandos:
 # docker rm -f flask-contenedor 
 # docker build -t contenedorestudiantex .
 # docker run -d -p 8082:5000 --name flask-contenedor contenedorestudiantex
+# Una vez que el contenedor se haya creado, podemos acceder al url
 # Link del index: http://localhost:8082/inicio?
 # Link de un perfil especifico: http://localhost:8082/perfil?ci=28309145&lan=ES
