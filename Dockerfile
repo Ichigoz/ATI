@@ -1,18 +1,38 @@
-# Imagen oficial de Apache
-FROM httpd:2.4
-WORKDIR /usr/local/apache2/htdocs/
+FROM python:3.9-slim
+WORKDIR /app
+RUN pip install flask
 
-# Copia todos los archivos
-COPY ./ ./
+COPY CSS/ ./CSS/
+COPY conf/ ./conf/
+COPY app.py ./app.py
+COPY datos/ ./datos/
+COPY 13852255/ ./13852255/
+COPY 14444733/ ./14444733/
+COPY 18002106/ ./18002106/
+COPY 18009154/ ./18009154/
+COPY 18110561/ ./18110561/
+COPY 18443368/ ./18443368/
+COPY 18487832/ ./18487832/
+COPY 18819509/ ./18819509/
+COPY 18829705/ ./18829705/
+COPY 18836874/ ./18836874/
+COPY 18938455/ ./18938455/
+COPY 19267152/ ./19267152/
+COPY 19334139/ ./19334139/
+COPY 19371273/ ./19371273/
+COPY 19379860/ ./19379860/
+COPY 19499302/ ./19499302/
+COPY 19558625/ ./19558625/
+COPY 19932730/ ./19932730/
+COPY 20117857/ ./20117857/
+COPY 28309145/ ./28309145/
 
-# Puerto 80
-EXPOSE 80
+EXPOSE 8082
+CMD ["python", "./app.py"]
 
-# Descripcion de los pasos:
-# 1. Creamos el archivo Dockerfile en la carpeta con el contenido de la web
-# 2. Ubicamos la carpeta en la terminal
-# 3. Creamos la imagen (docker build -t mi-web-apache .)
-# 4. Ejecutamos un contenedor a partir de la imagen creada anteriormente (mi-web-apache) apuntando al puerto 80 
-# (docker run -d -p 8080:80 --name web-apache mi-web-apache)
-# 5. Verificamos que se creo en la terminal (docker ps)
-# 6. Por ultimo lo cargamos en el navegador (http://localhost:8080)
+# Comandos necesarios en el shell para implementar el contenedor: 
+# docker rm -f flask-contenedor 
+# docker build -t contenedorestudiantex .
+# docker run -d -p 8082:5000 --name flask-contenedor contenedorestudiantex
+# Link del index: http://localhost:8082/inicio?
+# Link de un perfil especifico: http://localhost:8082/perfil?ci=28309145&lan=ES

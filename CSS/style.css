@@ -5,6 +5,8 @@ body {
     padding: 0;
     background-color: white;
     font-size: 1rem;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* Style Perfil */
@@ -19,12 +21,22 @@ body {
 
 .foto {
     border-radius: 20px 0px 0 0;
-    width: 200px;
+    width: 280px;
     height: auto;
-    flex: none;
+    flex: 0 0 250px;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
+
+.foto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px 0px 0 0;
+}
+
 
 .contenedor-perfil {
     width: 100%;
@@ -105,18 +117,24 @@ body {
 /* 320px — 480px */
 @media (max-width: 480px) {
     .contenedor-principal {
-        flex-direction: column;
-        align-items: center;
-    }
+    display: flex;
+    align-items: stretch;
+    max-width: 950px;
+    margin: 20px auto;
+    gap: 10px;
+    padding: 10px;
+}
 
-    .foto {
-        width: 90%;
-        height: auto; 
-        aspect-ratio: 3/4; 
-        border-radius: 20px 0px 0 0;
-        background-size: cover;
-        background-position: center;
-    }
+
+ .foto {
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+}
+
 
     .contenedor-perfil {
         width: 80%;
@@ -157,20 +175,25 @@ body {
 
 /* 481px — 768px */
 @media (min-width: 481px) and (max-width: 768px) {
-    .contenedor-principal {
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-    }
+.contenedor-principal {
+    display: flex;
+    align-items: stretch;
+    max-width: 950px;
+    margin: 20px auto;
+    gap: 10px;
+    padding: 10px;
+}
 
-    .foto {
-        width: 90%;
-        height: auto; 
-        aspect-ratio: 3/4; 
-        border-radius: 20px 0px 0 0;
-        background-size: cover;
-        background-position: center;
-    }
+
+.foto {
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+}
+
 
     .contenedor-perfil {
         width: 100%;
